@@ -6,7 +6,7 @@
 /*   By: soulaimane <salahian@student.1337.ma>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:31:35 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/10/26 14:33:08 by soulaiman        ###   ########.fr       */
+/*   Updated: 2024/11/03 15:46:54 by soulaiman        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
+	if (fd < 0 || s == NULL)
+		return ;
 	i = 0;
 	while (s[i])
 	{

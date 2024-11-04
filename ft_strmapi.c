@@ -6,7 +6,7 @@
 /*   By: soulaimane <salahian@student.1337.ma>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 09:56:37 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/10/27 11:30:06 by soulaiman        ###   ########.fr       */
+/*   Updated: 2024/11/03 15:15:35 by soulaiman        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*p;
 	size_t	i;
 
-	if (s == NULL)
+	if (s == NULL || !f)
 		return (NULL);
 	i = ft_strlen(s);
 	p = malloc(i + 1);

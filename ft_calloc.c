@@ -6,7 +6,7 @@
 /*   By: soulaimane <salahian@student.1337.ma>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 08:40:55 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/10/24 14:04:51 by soulaiman        ###   ########.fr       */
+/*   Updated: 2024/11/02 08:50:40 by soulaiman        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,15 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
+	size_t	len;
 	void	*p;
-	char	*s;
-	size_t	i;
 
-	p = malloc(size * count);
+	len = count * size;
+	if (size != 0 && (count > SIZE_MAX / size))
+		return (NULL);
+	p = malloc(len);
 	if (p == NULL)
 		return (NULL);
-	i = 0;
-	s = (char *)p;
-	while (i < count)
-	{
-		s[i] = 0;
-		i++;
-	}
+	ft_bzero(p, len);
 	return (p);
 }

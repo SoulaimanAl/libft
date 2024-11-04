@@ -6,7 +6,7 @@
 /*   By: soulaimane <salahian@student.1337.ma>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:34:01 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/10/26 14:37:06 by soulaiman        ###   ########.fr       */
+/*   Updated: 2024/11/03 15:48:06 by soulaiman        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
+	if (fd < 0 || s == NULL)
+		return ;
+	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
