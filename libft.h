@@ -6,7 +6,7 @@
 /*   By: soulaimane <salahian@student.1337.ma>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:32:18 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/11/06 12:25:15 by soulaiman        ###   ########.fr       */
+/*   Updated: 2024/11/07 08:45:15 by soulaiman        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+# include <stdint.h>
 # include <limits.h>
 
 ///////part 1///////

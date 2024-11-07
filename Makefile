@@ -24,5 +24,3 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
-
-.SECONDARY: $(OBJ) $(BONUS_OBJ)
