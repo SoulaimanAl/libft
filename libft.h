@@ -6,7 +6,7 @@
 /*   By: soulaimane <salahian@student.1337.ma>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:32:18 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/11/07 09:01:56 by soulaiman        ###   ########.fr       */
+/*   Updated: 2024/11/07 10:37:11 by soulaiman        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdint.h>
-# include <limits.h>
 
-///////part 1///////
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
@@ -43,7 +40,6 @@ int		ft_isalnum(int c);
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 
-///////part 2///////
 char	*ft_itoa(int n);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
@@ -55,8 +51,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-
-///////part B///////
 
 typedef struct s_list
 {

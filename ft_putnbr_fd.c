@@ -6,7 +6,7 @@
 /*   By: soulaimane <salahian@student.1337.ma>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:38:21 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/11/03 15:55:54 by soulaiman        ###   ########.fr       */
+/*   Updated: 2024/11/07 09:27:04 by soulaiman        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static	void	hel(char *b, int n, int r, int fd)
 void	ft_putnbr_fd(int n, int fd)
 {
 	int		r;
-	char	b[11];
+	char	b[12];
 
 	if (fd == -1)
 		return ;

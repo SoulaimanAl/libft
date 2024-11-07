@@ -8,8 +8,8 @@ NAME = libft.a
 
 all: $(NAME)
 
-bonus: $(BONUS_OBJ) $(OBJ)
-	ar rcs $(NAME) $(BONUS_OBJ) $(OBJ)
+bonus: $(BONUS_OBJ)
+	ar rcs $(NAME) $(BONUS_OBJ)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
@@ -24,5 +24,3 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
-
-.SECONDARY: $(OBJ) $(BONUS_OBJ)
