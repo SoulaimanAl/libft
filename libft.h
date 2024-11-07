@@ -6,7 +6,7 @@
 /*   By: soulaimane <salahian@student.1337.ma>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:32:18 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/11/07 08:45:15 by soulaiman        ###   ########.fr       */
+/*   Updated: 2024/11/07 09:01:56 by soulaiman        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 # include <stdint.h>
 # include <limits.h>

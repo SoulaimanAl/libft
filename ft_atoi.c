@@ -6,7 +6,7 @@
 /*   By: soulaimane <salahian@student.1337.ma>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 08:24:28 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/11/04 10:18:24 by soulaiman        ###   ########.fr       */
+/*   Updated: 2024/11/07 09:03:02 by soulaiman        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (re > ((LONG_MAX - (str[i] - '0')) / 10))
+		if (re > ((9223372036854775807 - (str[i] - '0')) / 10))
 			return (-sign * (sign == 1));
 		re = (re * 10) + (str[i] - '0');
 		i++;
